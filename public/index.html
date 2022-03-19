@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tailwind.css">
+    <title>tailwindcss</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-300">
+
+
+
+
+    <div class="text-center py-3 bg-purple-500 capitalize font-bold shadow-lg text-2xl text-white">Javascript the event loop</div>
+
+    <div class="text-center rounded-md text-white text-lg absolute top-28 left-32 globalScope shadow-lg bg-blue-400 h-80 w-52">
+        <h2>Execution stack</h2>
+        <div class="rounded-lg shadow-md absolute bottom-5 left-2 bg-blue-500 w-48 m-auto">
+            Global Execution Context
+        </div>
+    </div>
+
+    <div class="text-center rounded-md text-white text-lg absolute top-28 left-96 globalScope shadow-lg bg-blue-400 h-52 w-80">
+        <h2>Web APIS</h2>
+        <ul class=" float-right">
+            <li class=" bg-blue-500 mx-4 p-2  mt-2">setTimeOut</li>
+            <li class=" bg-blue-500 mx-4 p-2  mt-2">DOM</li>
+            <li class=" bg-blue-500 mx-4 p-2  mt-2">AJAX/API CALLS</li>
+        </ul>
+    </div>
+
+    <div class="text-center rounded-md text-white text-2xl absolute top-96 left-96 globalScope shadow-lg bg-blue-400 h-52 w-80">
+        <h1>Message Queue</h1>
+    <div class="flex justify-between">
+    <div class="w-28 h-16 border-blue-700 border-2 ml-6 mt-9 rounded-lg">
+    </div>
+    <div class="w-28 mt-9 mr-6 h-16 border-blue-700 border-2 rounded-lg">
+    </div>
+    </div>
+        </div>
+
+        <button class="absolute bottom-16 left-40 bg-blue-400 p-4 rounded-full text-white shadow-lg hover:bg-blue-600">Loop</button>
+
+        <div class="absolute bottom-24 
+        left-56 w-40 h-2 rounded-md bg-blue-500"></div>
+
+        <div class="absolute bottom-24 
+        left-56 w-2 h-28 rounded-md bg-blue-500"></div>
+
+
+
+        <div class="editor absolute right-28 top-40">
+
+            <div>
+                <ol>
+                    <li> <pre class="language-js"> <code> 
+const second =()=>{
+setTimeout(()=>{
+ console.log('output three')
+},3000)
+  }  
+
+ const first=()=>{
+ console.log('Output one')
+  second()
+ console.log('output two')
+   }       
+
+ first() </code> </pre></li>
+                </ol>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+    <script src="plugin/prism.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

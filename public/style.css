@@ -1,0 +1,11 @@
+.active{
+    opacity: 1!important;
+    transform: scale(1)!important;
+}
+
+.popup{
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all .3s ease-in-out;
+}
+
